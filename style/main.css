@@ -1,0 +1,96 @@
+:root{
+    --vermelho: #DB202C;
+    --preta: #141414;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* elementos base*/
+body{
+    color: rgb(255,255,255);
+    background: var(--preta);
+    font-family: sans-serif;
+}
+
+header .container{ 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo{
+    margin-left: 10px;
+    color: var(--vermelho);
+    font-family: "Arial";
+    font-size: 40px;
+}
+header nav a{
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px
+}
+header nav a:hover{
+    color: rgb(196, 189, 189)
+}
+/*filme principal*/
+.filmeprincipal{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%),url("/img/rambackground.jpg");
+    height: 400px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.filmeprincipal .descricao{
+    margin-top: 13px;
+    margin-bottom: 40px;
+}
+.titulo{
+    margin-top: 5%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+.btn{
+    background-color:rgba(0,0,0,.50);
+    border:none;
+    color: white;
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 11px;
+    cursor:pointer;
+    transition: .2s ease all;
+    border-radius: 5px;
+}
+.btn:hover{
+    background-color:white;
+    color: black;
+}
+.btn i{
+    margin-right: 8px;
+}
+
+.container{
+    margin-left:30px;   
+}
+.filmeprincipal .container{
+    width: 65%;
+}
+.container nav{
+    margin-right: 2.5%;
+}
+.box-desenho{
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+nav i{
+    padding-right: 5px;
+}
+.carrossel-filmes{
+    margin-top: 5px;
+}
